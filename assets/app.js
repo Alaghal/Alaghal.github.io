@@ -21,7 +21,7 @@ const english = {
   step3Title:'Build and verify',step3Text:'Implement the core journey, verify it with tests and demonstrate a working version.',step4Title:'Deploy and observe',step4Text:'Prepare deployment, logs, metrics and clear documentation for the next steps.',
   aboutEyebrow:'THE PERSON BEHIND THE CODE',aboutTitle:'An engineer by approach.<br>A builder by curiosity.',aboutP1:'I’m Andrey Seryakov, a backend and platform engineer. I work with Go, Kotlin and Java: designing services, connecting systems and understanding how they behave under load.',
   aboutP2:'I’m interested in the whole product journey, from a real problem to a useful tool. That brings AI integrations, my own SaaS projects and infrastructure work alongside backend engineering.',toolboxBackend:'BACKEND',toolboxData:'DATA & EVENTS',toolboxPlatform:'PLATFORM',
-  contactEyebrow:'LET’S BUILD SOMETHING USEFUL',contactTitle:'A good system<br>starts with<br><span>a conversation.</span>',contactDescription:'Tell me what you want to build,<br>where the project stands<br>and where you need help.',prepareBrief:'Discuss a project',copyEmail:'Copy email address',footerNote:'Andrey Seryakov · Backend & Product Engineering',backTop:'Back to top ↑',
+  contactEyebrow:'LET’S BUILD SOMETHING USEFUL',contactTitle:'A good system<br>starts with<br><span>a conversation.</span>',contactDescription:'Tell me what you want to build,<br>where the project stands<br>and where you need help.',prepareBrief:'Discuss a project',copyEmail:'Copy email address',directContact:'Prefer a direct message?',footerNote:'Andrey Seryakov · Backend & Product Engineering',backTop:'Back to top ↑',
   viewSource:'Explore the source code',briefEyebrow:'FIRST STEP / A SHORT BRIEF',briefTitle:'What are we building?',briefIntro:'A few details help start a useful conversation.',briefService:'What do you need help with?',briefMvp:'Product MVP',briefReview:'Technical review',briefOther:'Another idea',briefTask:'Tell me about the task',briefPlaceholder:'What should be built? What already exists? What outcome do you need?',briefName:'Your name',briefTiming:'Timeline, if you have one',namePlaceholder:'Name',timingPlaceholder:'For example, within a month',briefReady:'Your email draft',openEmail:'Open email app',copyText:'Copy draft',buildBrief:'Prepare email',briefNote:'Your brief stays in your browser. Send it through your email app to 757Grok@mail.ru.'
 };
 
@@ -41,6 +41,7 @@ function updateLabels(){
   document.querySelector('.brand').setAttribute('aria-label',en?'Alaghal — home':'Alaghal — на главную');
   document.querySelector('.architecture').setAttribute('aria-label',en?'Interactive backend architecture diagram':'Интерактивная схема backend-системы');
   navigation.setAttribute('aria-label',en?'Main navigation':'Основная навигация');
+  document.querySelector('.contact-socials').setAttribute('aria-label',en?'Social contact channels':'Социальные сети');
   menu.setAttribute('aria-label',menu.getAttribute('aria-expanded')==='true'?(en?'Close menu':'Закрыть меню'):(en?'Open menu':'Открыть меню'));
   document.querySelectorAll('[data-close-dialog]').forEach(el=>el.setAttribute('aria-label',en?'Close':'Закрыть'));
   document.querySelectorAll('.service-button').forEach((el,i)=>el.setAttribute('aria-label',(en?'Discuss ':'Обсудить ')+t(`service${i+1}Title`).replaceAll('&amp;','&')));
